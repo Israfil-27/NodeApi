@@ -1,0 +1,49 @@
+### Create new ProductTest
+POST http://localhost:5000/api/productsTests
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWU0ZTgwZWVhODI2MGYzNzBmNDdkNDgiLCJpYXQiOjE3MDk1MDEzNjQsImV4cCI6MTcxMTIyOTM2NH0.qk51ZuF-I-2RQ84ILEgyq7G2J6VCemaJj_u375imaFQ
+
+{
+   "name": "israfil", "lastName": "veliyev", "age":"23" 
+}
+### Bulk Insert
+
+POST http://localhost:5000/api/categories/bulk-insert
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWUyNDZiNDBiNWViNDE0N2JhZTE2OWYiLCJpYXQiOjE3MDk0NzkwNDcsImV4cCI6MTcxMTIwNzA0N30.krxPNwcD_KQqNOtDKz3uw625UwmXmwbCo284JOkmfz4
+
+{
+  "categories": [
+    { "categoryName": "Beverages",      "description": "Soft drinks, coffees, teas, beers, and ales" },
+    { "categoryName": "Condiments",     "description": "Sweet and savory sauces, relishes, spreads, and seasonings" },
+    { "categoryName": "Confections",    "description": "Desserts, candies, and sweet breads" },
+    { "categoryName": "Dairy Products", "description": "Cheeses" },
+    { "categoryName": "Grains/Cereals", "description": "Breads, crackers, pasta, and cereal" },
+    { "categoryName": "Meat/Poultry",   "description": "Prepared meats" },
+    { "categoryName": "Produce",        "description": "Dried fruit and bean curd" },
+    { "categoryName": "Seafood",        "description": "Seaweed and fish" }
+  ]
+}
+
+
+### GET Category By Id
+GET http://localhost:5000/api/categories/65ce1d2877c9c036cefce4d6
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWUyNDZiNDBiNWViNDE0N2JhZTE2OWYiLCJpYXQiOjE3MDk0NzkwNDcsImV4cCI6MTcxMTIwNzA0N30.krxPNwcD_KQqNOtDKz3uw625UwmXmwbCo284JOkmfz4
+
+
+### GET All Categories
+GET http://localhost:5000/api/categories
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWUyNDZiNDBiNWViNDE0N2JhZTE2OWYiLCJpYXQiOjE3MDk0Nzk5NTAsImV4cCI6MTcxMTIwNzk1MH0.xK1ZLOWZPbSWTp1XFkKgCa-LfpxDJgY-NMTc_KNZm5M
+
+### DELETE Category By Id
+DELETE http://localhost:5000/categories/65ce1d2877c9c036cefce4d6
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWRmMGM3MzI4YTliM2U2YjNlMTg0NzkiLCJpYXQiOjE3MDkxMjA5MDV9.DyftnbwYqeY_wDAoq8FY6b2-rJj1hQVIlwD-CqSHAwA
+
+### Update Category By Id
+PATCH http://localhost:5000/api/categories/65e49493417add102d94f468
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWUyNDZiNDBiNWViNDE0N2JhZTE2OWYiLCJpYXQiOjE3MDk0Nzk5NTAsImV4cCI6MTcxMTIwNzk1MH0.xK1ZLOWZPbSWTp1XFkKgCa-LfpxDJgY-NMTc_KNZm5M
+
+{
+   "categoryName": "Bevqerages", "description": "dwaadw" 
+}

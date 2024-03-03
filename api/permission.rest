@@ -1,0 +1,11 @@
+### Add Permissio to Role
+POST http://localhost:5000/permissions/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWRmMzk3ODAyYmEzZWE0NGQyODdiM2MiLCJpYXQiOjE3MDkyODk0MTEsImV4cCI6MTcxMTAxNzQxMX0.9rWOnwSxaklXavQMxsH2BgX56mSTTPRMxWpmUU0N3_o
+
+{
+    "name":"Pages.Categories",
+    "roleId":"65e08593e08bc688809623da",
+    "userId":"65df397802ba3ea44d287b3c"
+} 
+ 

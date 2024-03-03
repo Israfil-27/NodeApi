@@ -1,0 +1,32 @@
+### Create new Role
+
+POST http://localhost:5000/api/roles
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWUyNDFkZjgzNDAwN2NhYmQyMTM3ZmIiLCJpYXQiOjE3MDkzMjc4ODUsImV4cCI6MTcxMTA1NTg4NX0.6zUFe0JOagaf8l-4RVEkXRQI99YRWTyJiWdopg8Nigo
+
+{
+   "name": "admin"
+}
+
+ 
+### GET Role By Id
+GET http://localhost:5000/roles/65ce1d2877c9c036cefce4d6
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWRmMGM3MzI4YTliM2U2YjNlMTg0NzkiLCJpYXQiOjE3MDkxMjA5MDV9.DyftnbwYqeY_wDAoq8FY6b2-rJj1hQVIlwD-CqSHAwA
+
+
+### GET All Roles
+GET http://localhost:5000/roles
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWRmMGM3MzI4YTliM2U2YjNlMTg0NzkiLCJpYXQiOjE3MDkxMjE1MzYsIm5iZiI6MTcwOTEyMTU1MSwiZXhwIjoxNzA5MTIxNTU2LCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjMwMDAifQ.Ov1sbOS3l0M8pbPQKy0WcYQVn_u7R_x-eYwZJCNw6c4
+
+### DELETE Role By Id
+DELETE http://localhost:5000/roles/65ce1d2877c9c036cefce4d6
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWRmMzk3ODAyYmEzZWE0NGQyODdiM2MiLCJpYXQiOjE3MDkyMTI5ODEsImV4cCI6MTcwOTIxNDE4MX0.qzipQTx4WpZmJ9mnyZOJ66oQzKXjXywr5P9ToWL6Tvs
+
+### Update Role By Id
+PATCH http://localhost:5000/roles/65ce1d2877c9c036cefce4d6
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWRmMzk3ODAyYmEzZWE0NGQyODdiM2MiLCJpYXQiOjE3MDkyMTI5ODEsImV4cCI6MTcwOTIxNDE4MX0.qzipQTx4WpZmJ9mnyZOJ66oQzKXjXywr5P9ToWL6Tvs
+
+{
+   "name": "moderator" 
+}

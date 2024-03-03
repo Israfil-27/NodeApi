@@ -1,0 +1,16 @@
+[
+  {
+    "categories": [
+      {
+        "name": "General",
+        "description": "General settings for the bot",
+        "createdDate": "2021-07-01T00:00:00.000Z"
+      },
+      {
+        "name": "Moderation",
+        "description": "Moderation settings for the bot",
+        "createdDate": "2021-07-01T00:00:00.000Z"
+      }
+    ]
+  }
+]
